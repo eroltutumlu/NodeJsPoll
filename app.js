@@ -11,3 +11,7 @@ var server = http.createServer(app);
 server.listen(port, function(){
     console.log('Listening port: ' + port);
 });
+
+app.get('/', function (req, res) {
+  res.send('Hello from Furkan');
+})
