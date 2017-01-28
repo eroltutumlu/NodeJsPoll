@@ -8,10 +8,11 @@ app.use(express.static(__dirname + "/public"));
 
 var server = http.createServer(app);
 
+app.get('/', function (req, res) {
+  res.send('Hello from Furkan');
+})
+
 server.listen(port, function(){
     console.log('Listening port: ' + port);
 });
 
-app.get('/', function (req, res) {
-  res.send('Hello from Furkan');
-})
