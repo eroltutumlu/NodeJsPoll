@@ -8,17 +8,11 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 
 app.get('/', function (request, response) {
-    response.sendFile('index.html');
-    console.log("anasayfaya girildi");
+    response.render("pages/index");
 });
 
 var server = http.createServer(app);
 
-app.get('/', function (req, res) {
-  res.send('Hello from Furkan');
-})
-
 server.listen(port, function(){
     console.log('Listening port: ' + port);
 });
-

@@ -1,0 +1,48 @@
+footer {
+background-color: #ccc;
+margin-top: 10px;
+margin-bottom: 0;
+padding: 30px;
+}
+
+.zero-bottom{
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.subtitle{
+font-size:13px; margin-left:15px;
+}
+
+.panel-body, .panel-body .radio, .panel-body .checkbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px !important;
+}
+
+.panel-body .list-group {
+	margin-bottom: 0 !important;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0;
+}
+
+.panel-body .radio label, .panel-body .checkbox label {
+	display: block;
+}
+
+.pollDetail{
+	padding-top: 20px;
+	width: 100%;
+	
+}
+
+.pollChart{
+	width: 100%;
+}
+
+
+.pollDiv{
+	border-bottom: 0.5px solid #ccc;
+}
