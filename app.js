@@ -3,6 +3,7 @@ var http = require('http'),
     port = process.env.PORT || 3000;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_a07372
 var my_page = require('./routes/my-page');
 =======
@@ -11,12 +12,16 @@ var about_us = require('./routes/about-us');
 =======
 var polls =require('./routes/polls')
 >>>>>>> polls-ejs-page-routes
+=======
+var index = require('./routes/index');
+>>>>>>> index-ejs-page-routes
 
 var app = express();
 
 app.set('view engine','ejs');
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_a07372
 app.use('/my_page',my_page);
@@ -32,6 +37,10 @@ app.use('/polls',polls);
 app.get('/', function (request, response) {
     response.render("pages/index");
 });
+=======
+app.use('/',index);
+
+>>>>>>> index-ejs-page-routes
 var server = http.createServer(app);
 
 server.listen(port, function(){
