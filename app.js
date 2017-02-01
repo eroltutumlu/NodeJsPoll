@@ -10,11 +10,6 @@ app.use(express.static(__dirname + "/views"));
 app.get('/', function (request, response) {
     response.render("pages/index");
 });
-
-app.get('/polls', function (request, response) {
-    response.render("pages/polls");
-});
-
 var server = http.createServer(app);
 
 server.listen(port, function(){
