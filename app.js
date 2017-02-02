@@ -14,8 +14,8 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 
 // Routes middlewares
-app.use('/my-page',my_page);
-app.use('/about-us',about_us);
+app.use('/my-page',myPage);
+app.use('/about-us',aboutUs);
 app.use('/',index);
 app.use('/polls',polls);
 
