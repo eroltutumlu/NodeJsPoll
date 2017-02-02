@@ -7,9 +7,9 @@ app.set('view engine','ejs');
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
 
-app.get('/', function (request, response) {
-    response.render("pages/index");
-});
+// Routes middlewares
+app.use(require('./routes/index'));
+app.use(require('./routes/pools'));
 
 var server = http.createServer(app);
 
