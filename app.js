@@ -11,9 +11,9 @@ var polls = require('./routes/polls');
 var app = express();
 app.set('view engine','ejs');
 app.use(express.static(__dirname + "/public"));
-app.use(express.static(__dirname + "/views"));
-app.use('/my_page',my_page);
-app.use('/about_us',about_us);
+//app.use(express.static(__dirname + "/views"));
+app.use('/my-page',my_page);
+app.use('/about-us',about_us);
 app.use('/',index);
 app.use('/polls',polls);
 

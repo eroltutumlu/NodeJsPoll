@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('../views/pages/polls', {pageName:'Polls'}); //render çağırmak analmında kullanılır
+  res.render('../views/pages/polls', {pageName:'Polls'});
 });
 
-module.exports = router; //modüle dışarda erişim sağlayabilmek için kodu export ediyoruz
+module.exports = router;

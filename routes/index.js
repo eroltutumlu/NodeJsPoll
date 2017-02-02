@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('../views/pages/index', {pageName:'Home'}); //render çağırmak analmında kullanılır
+  res.render('../views/pages/index', {pageName:'Home'});
 });
 
-module.exports = router; //modüle dışarda erişim sağlayabilmek için kodu export ediyoruz
+module.exports = router;
