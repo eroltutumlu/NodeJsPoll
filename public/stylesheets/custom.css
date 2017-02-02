@@ -46,3 +46,20 @@ font-size:13px; margin-left:15px;
 .pollDiv{
 	border-bottom: 0.5px solid #ccc;
 }
+
+
+.userWelcome {
+	padding-top:15px; padding-buttom:15px; color:#fff;
+}
+
+.container-margin-top {
+	margin-top:50px;
+}
+
+.marginTop25{
+	margin-top:25px;
+}
+
+.marginLeft5{
+	margin-left: 5px
+}
